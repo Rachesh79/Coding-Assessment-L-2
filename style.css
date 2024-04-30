@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..900&display=swap');
+
+*{
+    font-family: "Inter",sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container p{
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#heading {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.text {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.36px;
+    color: #000000;
+    left: 121px;
+}
+
+#heading{
+    font-size: 36px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 80%;
+    border-radius: 5px;
+    flex-wrap: wrap;
+}
+
+.nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-items li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px 140px;
+    border-radius: 5px;
+    font-family: "Inter",sans-serif;
+}
+
+.nav-items li a:hover{
+    cursor: pointer;
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+a{
+    font-size: 25px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.nav-items a:hover {
+    color: #c70039;
+}
+
+.products {
+    margin-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 72vh;
+    width: 100vw;
+    margin-bottom: 20px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 5px;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.product-image .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    visibility:hidden;
+    color: black;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.product-image {
+    height: 60%;
+    position: relative;
+}
+
+.product-title,
+.product-description {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-description{
+    justify-content: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.comparePrice {
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+#vendor1, #vendor2, #vendor3, #vendor4{
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.offer{
+    color: #c70039;
+}
+
+.add-to-cart {
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+/* For Mobile Screen: Up to 767px */
+@media screen and (max-width: 767px) {
+    .container p {
+        font-size: 14px; 
+        line-height: 1.5;
+            
+            letter-spacing: 0.5px
+    }
+    .nav-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-items li {
+        padding: 10px 50px; 
+    }
+    .products {
+        height: auto;
+    }
+    .product {
+        width: 45%; 
+        height: 50%;
+        flex-direction: column; 
+    }
+    .product-image {
+        height: 50%; 
+        order: -1;
+        margin-bottom: 10px;
+    }
+    .product-image img{
+        max-width: 100%;
+            height: auto;
+    }
+}
+
+/* For Tablet Screen: 768px to 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-items {
+            display: flex;
+            flex-direction: column;
+    }
+    .container p {
+        font-size: 16px; 
+    }
+    .nav-items li {
+        padding: 10px 150px; 
+    }
+        .products {
+            height: auto;
+        }
+    
+        .product {
+            width: 45%;
+            height: 50%;
+        }
+    
+        .product-image {
+            height: 50%;
+        }
+
+}
+
+/* For Desktop Screen: Above 1025px */
+@media screen and (min-width: 1025px) {
+    .container p {
+        font-size: 18px; 
+    }
+    .nav-items li {
+        padding: 10px 140px; 
+    }
+    .products {
+        height: 72vh; 
+    }
+    .product {
+        width: 20%; 
+        height: 70vh; 
+    }
+    .product-image {
+        height: 60%; 
+    }
+}

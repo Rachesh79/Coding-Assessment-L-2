@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text with Drop Shadow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <p class="text" id="heading">SELECT YOUR CHOICE</p>
+        <nav class="navbar">
+            <ul class="nav-items">
+                <li onclick="mensData()" id="li1">
+                    <img src="Vector.png" alt="Company Logo" class="logo">
+                    <a href="#">Men</a>
+                </li>
+                <li onclick="womenData()" id="li2">
+                    <img src="vector 2.png" alt="Company Logo" class="logo">
+                    <a href="#">Women</a>
+                </li>
+                <li onclick="kidsData()" id="li3">
+                    <img src="Vector 3.png" alt="Company Logo" class="logo">
+                    <a href="#">Kids</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="products">
+            <div class="product">
+                <div class="product-image">
+                    <img  alt="" width="300" height="300" id="Image1">
+                    <div class="badge" id="badge1">New</div> 
+                </div>
+                
+                <div class="desc">
+                    <div class="product-info">
+                        <!-- <p class="product-description" id="prod1Desc"></p> -->
+                        <!-- <div id="vendor1"></div> -->
+                        <span class="product-description" id="prod1Desc"></span>
+                        <span id="vendor1"></span>
+                    </div>
+                    <p class="product-price">
+                        <span class="price" id="price1">Rs </span>
+                        <span class="comparePrice" id="comp1"></span> 
+                        <span class="offer" id="offer1"></span>
+                    </p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <div class="product-image">
+                    <img  alt="" width="300" height="300" id="Image2">
+                    <div class="badge" id="badge2">New</div> <!-- Add the badge element here -->
+                </div>
+                <div class="desc">
+                    <!-- <p class="product-title">On Offer</p> -->
+                    <div class="product-info">
+                        <span class="product-description" id="prod2Desc"></span>
+                        <span id="vendor2"></span>
+                    </div>
+                    <p class="product-price"><span class="price" id="price2">Rs </span> <span class="comparePrice" id="comp2"></span> <span class="offer" id="offer2">(50% Off)</span></p>
+                </div>
+                <button class="add-to-cart" >Add to Cart</button>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    <img  alt="" width="300" height="300" id="Image3">
+                    <div class="badge" id="badge3">New</div> <!-- Add the badge element here -->
+                </div>
+                <div class="desc">
+                    <!-- <p class="product-title">New Season</p> -->
+                    <div class="product-info">
+                        <span class="product-description" id="prod3Desc"></span>
+                        <span id="vendor3"></span>
+                    </div>
+                    <p class="product-price"><span class="price" id="price3">Rs </span> <span class="comparePrice" id="comp3"></span> <span class="offer" id="offer3">(50% Off)</span></p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+            <div class="product">
+                <div class="product-image">
+                    <img  alt="" width="300" height="300" id="Image4">
+                    <div class="badge" id="badge4">New</div>
+                </div>
+                <div class="desc">
+                    <!-- <p class="product-title">New Season</p> -->
+                    <div class="product-info">
+                        <span class="product-description" id="prod4Desc"></span>
+                        <span id="vendor4"></span>
+                    </div>
+                    <p class="product-price"><span class="price" id="price4">Rs </span> <span class="comparePrice" id="comp4"></span> <span class="offer" id="offer4">(50% Off)</span></p>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+<script src="script.js" >
+</script>
+
+
+</html>
